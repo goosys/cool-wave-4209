@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.2.4"
 
@@ -65,3 +66,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "administrate", github: "goosys/administrate", branch: "feature/contextualize"
+gem "administrate-mistybird", github: "goosys/misty-bird-7370"

@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  author: MyString
+  published_at: 2024-07-18 16:29:41
+  pages: 100
+  genre: Fiction
+  available: false
+  price: 0.0
+  language: 0
+  rating: 0
+
+two:
+  title: MyString
+  description: MyText
+  author: MyString
+  published_at: 2024-07-18 16:29:41
+  pages: 200
+  genre: Non-fiction
+  available: false
+  price: 0.0
+  language: 0
+  rating: 0
