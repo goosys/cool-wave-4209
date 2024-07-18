@@ -67,5 +67,8 @@ group :test do
   gem "selenium-webdriver"
 end
 
+gem "refile", require: "refile/rails", github: "vitalinfo/refile", branch: "latest_ruby_rails"
+gem "refile-mini_magick"
+
 gem "administrate", github: "goosys/administrate", branch: "feature/contextualize"
 gem "administrate-mistybird", github: "goosys/misty-bird-7370"

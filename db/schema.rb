@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_07_18_162941) do
+ActiveRecord::Schema[7.1].define(version: 2024_07_18_183727) do
   create_table "books", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -24,6 +24,10 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_18_162941) do
     t.integer "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "front_image_id"
+    t.string "front_image_filename"
+    t.string "front_image_size"
+    t.string "front_image_content_type"
   end
 
 end

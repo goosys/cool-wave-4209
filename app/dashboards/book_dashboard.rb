@@ -12,6 +12,7 @@ class BookDashboard < Administrate::BaseDashboard
     author: Field::String,
     available: Field::Boolean,
     description: Field::Text,
+    front_image: Field::Refile,
     genre: Field::String,
     language: Field::Number,
     pages: Field::Number,
@@ -33,6 +34,7 @@ class BookDashboard < Administrate::BaseDashboard
     author
     available
     description
+    front_image
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -42,6 +44,7 @@ class BookDashboard < Administrate::BaseDashboard
     author
     available
     description
+    front_image
     genre
     language
     pages
@@ -60,6 +63,7 @@ class BookDashboard < Administrate::BaseDashboard
     author
     available
     description
+    front_image
     genre
     language
     pages
