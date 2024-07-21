@@ -11,10 +11,11 @@ GIT
 
 GIT
   remote: https://github.com/goosys/misty-bird-7370.git
-  revision: bc221242f3a2979790b5fb106e4202ca941979bd
+  revision: 93be7985fbf68d303342fda9e84be84c316f0d6d
   specs:
     administrate-mistybird (0.1.0)
       administrate (>= 0.20.0, < 1.1.0)
+      administrate-field-nested_has_many (= 2.1.0)
       rails (>= 6.0, < 8)
 
 GIT
@@ -105,6 +106,9 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
+    administrate-field-nested_has_many (2.1.0)
+      administrate (>= 0.19, < 1)
+      cocoon (~> 1.2, >= 1.2.11)
     base64 (0.2.0)
     bigdecimal (3.1.8)
     bindex (0.8.1)
@@ -120,6 +124,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    cocoon (1.2.15)
     concurrent-ruby (1.3.3)
     connection_pool (2.4.1)
     crass (1.0.6)
@@ -129,6 +134,7 @@ GEM
       reline (>= 0.3.8)
     drb (2.2.1)
     erubi (1.13.0)
+    ffi (1.17.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.5)
@@ -248,6 +254,14 @@ GEM
       strscan
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
+    sassc-rails (2.1.2)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     selenium-webdriver (4.22.0)
       base64 (~> 0.2)
       logger (~> 1.4)
@@ -310,6 +324,7 @@ DEPENDENCIES
   rails (~> 7.1.3, >= 7.1.3.4)
   refile!
   refile-mini_magick
+  sassc-rails
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)

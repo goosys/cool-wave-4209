@@ -67,6 +67,7 @@ group :test do
   gem "selenium-webdriver"
 end
 
+gem "sassc-rails"
 gem "refile", require: "refile/rails", github: "vitalinfo/refile", branch: "latest_ruby_rails"
 gem "refile-mini_magick"
 
