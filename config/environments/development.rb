@@ -79,4 +79,6 @@ Rails.application.configure do
     warn "WARNING: (development) Disabling CSRF protection Origin header check!"
     config.action_controller.forgery_protection_origin_check = false
   end
+
+  config.action_view.logger = nil
 end
