@@ -1,24 +1,20 @@
-# README
+# A sample Rails application via Administrate::Mistybird
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Administrate::Mistybird](https://github.com/goosys/misty-bird-7370)
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+### GitHub Codespaces
 
-* System dependencies
+```console
+rvm list
+rvm install 3.2.4
+rvm use 3.2.4
+ruby -v
 
-* Configuration
+sudo apt update
+sudo apt install graphicsmagick
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+bundle install
+rails s
+```
