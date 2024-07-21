@@ -23,5 +23,12 @@ module CoolWave4209
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    #
+    config.i18n.default_locale = :en
+
+    #
+    Administrate::Engine.add_javascript("administrate/administrate")
+    Administrate::Engine.add_stylesheet("administrate/administrate")
   end
 end
