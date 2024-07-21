@@ -1,0 +1,11 @@
+<% content_for(:title) do %>
+  <%= t('.title') %>
+<% end %>
+
+<% content_for(:main) do %>
+  <section class="main-content__body">
+    <div>Hello</div>
+  </section>
+<% end %>
+
+<%= render template: 'administrate/application/home', locals: local_assigns %>

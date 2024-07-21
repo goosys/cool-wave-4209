@@ -3,6 +3,6 @@ Rails.application.routes.draw do
     resources :books
     resources :book_printing_histories
 
-    root "books#index"
+    root "overview#home"
   end
 end
