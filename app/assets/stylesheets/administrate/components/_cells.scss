@@ -1,0 +1,21 @@
+
+.cell-span--id {
+  width: 6em;
+}
+.cell-span--status {
+  width: 10em;
+}
+.cell-span--actions {
+  width: 6em
+}
+.cell-data--has_many, .cell-label--has_many {
+  text-align: right;
+}
+.cell-data--number {
+  white-space: nowrap;
+}
+.cell-data--refile {
+  img {
+    max-height: 2rem !important;
+  }
+}

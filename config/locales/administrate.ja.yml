@@ -1,0 +1,9 @@
+ja:
+  administrate:
+    actions:
+      new_resource: "新規作成する"
+      edit_resource: "%{name}"
+      show_resource: "%{name}"
+      new_button: "新規作成する"
+      show_button: "詳細に戻る"
+      edit_button: "編集する"

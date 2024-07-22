@@ -1,0 +1,94 @@
+
+.button {
+  background-color: $skyblue;
+
+  &:hover {
+    background-color: mix($white, $skyblue, 40%);
+  }
+
+  &:disabled {
+    &:hover {
+      background-color: $skyblue;
+    }
+  }
+}
+
+.button.button--info {
+  color: $skyblue;
+  border: 1px solid $skyblue;
+  background-color: $white;
+  transition: all $base-duration $base-timing;
+
+  &:hover {
+    color: mix($white, $skyblue, 40%);
+    border-color: mix($white, $skyblue, 40%);
+    background-color: $white;
+  }
+}
+
+.button.button--cancel {
+  color: mix($black, $white, 50%);
+  background-color: mix($black, $white, 5%);
+  border: $base-border;
+  transition: all $base-duration $base-timing;
+
+  &:hover {
+    color: mix($black, $white, 50%);
+    background-color: mix($black, $white, 5%);
+    border-color: mix($black, $base-border-color, 20%);
+  }
+}
+
+.button.button--normal {
+  color: mix($black, $white, 50%);
+  background-color: mix($black, $white, 5%);
+  border: $base-border;
+
+  &:hover {
+    color: mix($black, $white, 50%);
+    background-color: mix($black, $white, 5%);
+    border-color: mix($black, $base-border-color, 20%);
+  }
+}
+
+.button.button--update {
+  background-color: $orange;
+
+  &:hover {
+    background-color: mix($white, $orange, 40%);
+  }
+
+  &:disabled {
+    &:hover {
+      background-color: $orange;
+    }
+  }
+}
+
+.button.button--danger {
+  background-color: $red;
+
+  &:hover {
+    background-color: mix($white, $red, 40%);
+  }
+
+  &:disabled {
+    &:hover {
+      background-color: $red;
+    }
+  }
+}
+
+.action-edit.button,
+.action-destroy.button {
+  padding: 0.5em 1.5em;
+  font-weight: 500;
+}
+
+input[type=submit].button.button--update,
+input[type=submit].button.button--danger {
+  width: 100%;
+  max-width: 50rem;
+  margin-top: 2.5em;
+  height: 4em;
+}

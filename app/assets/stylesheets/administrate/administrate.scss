@@ -1,14 +1,5 @@
+@import "administrate/library/variables";
 
-.resource-total-count {
-  font-size: 0.9em;
-  padding-top: 1.4em;
-  text-align: center;
-  b {
-    margin-left: 0.1em;
-    margin-right: 0.1em;
-  }
-}
-p.resource-total-count:first-child {
-  padding-top: 0.4em;
-  padding-bottom: 0.4em;
-}
+@import "administrate/components/buttons";
+@import "administrate/components/cells";
+@import "administrate/components/pagination";

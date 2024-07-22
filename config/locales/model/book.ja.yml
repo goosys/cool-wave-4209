@@ -1,0 +1,26 @@
+ja:
+  attributes:
+    book: &model 書籍
+    book_id: *model
+    book_name: *model
+    books: *model
+  activerecord:
+    models:
+      book: *model
+    attributes:
+      book:
+        title: 書籍名
+        description: 説明文
+        author: 著者
+        published_at: 発行日
+        pages: ページ数
+        genre: ジャンル
+        available: 発売中
+        price: 価格
+        language: 言語
+        rating: 評価
+        front_image: 表紙画像
+        book_printing_histories: 発行履歴
+        least_book_printing_histories: 最新の発行履歴
+    book:
+      book:
