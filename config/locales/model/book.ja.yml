@@ -1,4 +1,9 @@
 ja:
+  enumerize:
+    book:
+      genre:
+        fiction: フィクション
+        non_fiction: ノンフィクション
   attributes:
     book: &model 書籍
     book_id: *model

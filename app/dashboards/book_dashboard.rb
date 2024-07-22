@@ -22,9 +22,9 @@ class BookDashboard < Administrate::BaseDashboard
     ),
     description: Field::Text,
     front_image: Field::Refile,
-    genre: Field::String,
+    genre: Field::Enumerize,
     language: Field::Number,
-    pages: Field::Number,
+    pages: Field::Number.with_options(suffix: "pages"),
     price: Field::String.with_options(searchable: false),
     published_at: Field::DateTime,
     rating: Field::Number,
@@ -45,6 +45,7 @@ class BookDashboard < Administrate::BaseDashboard
     book_printing_histories
     description
     front_image
+    genre
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES

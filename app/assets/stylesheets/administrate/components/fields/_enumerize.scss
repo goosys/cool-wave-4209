@@ -1,0 +1,37 @@
+// Enumerise Mixins
+@mixin enumerize-tag {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  transition: all $base-duration $base-timing;
+  white-space: nowrap;
+}
+@mixin enumerize-tag-color($color) {
+  color: $color;
+  border: 1px solid $color;
+}
+@mixin enumerize-tag-color-fill($color) {
+  color: $white;
+  background-color: $color;
+  border: 1px solid $color;
+}
+
+// Enumerise *.status
+.enumerize-tag-status-enabled {
+  @include enumerize-tag;
+  @include enumerize-tag-color($green);
+}
+.enumerize-tag-status-disabled {
+  @include enumerize-tag;
+  @include enumerize-tag-color($grey-5);
+}
+
+// Enumerise *.genre
+.enumerize-tag-genre-fiction {
+  @include enumerize-tag;
+  @include enumerize-tag-color($red);
+}
+.enumerize-tag-genre-non_fiction {
+  @include enumerize-tag;
+  @include enumerize-tag-color($blue);
+}

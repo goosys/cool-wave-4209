@@ -7,3 +7,8 @@ ja:
       new_button: "新規作成する"
       show_button: "詳細に戻る"
       edit_button: "編集する"
+    fields:
+      has_many:
+        pluralize:
+          zero: ""
+          other: "%{count}件"

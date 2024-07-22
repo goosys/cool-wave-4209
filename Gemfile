@@ -67,10 +67,12 @@ group :test do
   gem "selenium-webdriver"
 end
 
+gem "enumerize"
 gem "rails-i18n"
 gem "sassc-rails"
 gem "refile", require: "refile/rails", github: "vitalinfo/refile", branch: "latest_ruby_rails"
 gem "refile-mini_magick"
 
 gem "administrate", github: "goosys/administrate", branch: "feature/contextualize"
+gem "administrate-field-nested_has_many"
 gem "administrate-mistybird", github: "goosys/misty-bird-7370"

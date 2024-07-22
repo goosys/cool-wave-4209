@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/goosys/misty-bird-7370.git
-  revision: b3cb43a162eba47b5314628a4bc151a8d0491e2f
+  revision: f2007ba422d158921f0124a78fc41773c36c2010
   specs:
     administrate-mistybird (0.1.0)
       administrate (>= 0.20.0, < 1.1.0)
@@ -133,6 +133,8 @@ GEM
       irb (~> 1.10)
       reline (>= 0.3.8)
     drb (2.2.1)
+    enumerize (2.8.1)
+      activesupport (>= 3.2)
     erubi (1.13.0)
     ffi (1.17.0)
     globalid (1.2.1)
@@ -317,10 +319,12 @@ PLATFORMS
 
 DEPENDENCIES
   administrate!
+  administrate-field-nested_has_many
   administrate-mistybird!
   bootsnap
   capybara
   debug
+  enumerize
   importmap-rails
   jbuilder
   puma (>= 5.0)
