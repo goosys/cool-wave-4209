@@ -27,5 +27,7 @@ ja:
         front_image: 表紙画像
         book_printing_histories: 発行履歴
         least_book_printing_histories: 最新の発行履歴
+      book_printing_history:
+        book: 書籍
     book:
       book:

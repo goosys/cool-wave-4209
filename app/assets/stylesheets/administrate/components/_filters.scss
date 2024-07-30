@@ -1,0 +1,38 @@
+
+form[class$=_search] {
+  padding: 1rem 2rem;
+  background: $base-background-color;
+  margin-bottom: 0.5rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-left: -5px;
+}
+
+.filter {
+  width: calc(100% / 4 - 5px);
+  margin-bottom: 1rem;
+  margin-left: 5px;
+
+  label {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #999;
+  }
+}
+
+.filters-buttons {
+  text-align: right;
+
+  input[type=submit] {
+    font-size: 0.8rem;
+  }
+  .button.btn-clear-filters {
+    background-color: $white;
+    color: $black;
+    font-size: 0.7rem;
+  }
+}

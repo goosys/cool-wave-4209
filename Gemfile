@@ -69,10 +69,12 @@ end
 
 gem "enumerize"
 gem "rails-i18n"
-gem "sassc-rails"
+gem "ransack"
 gem "refile", require: "refile/rails", github: "vitalinfo/refile", branch: "latest_ruby_rails"
 gem "refile-mini_magick"
+gem "sassc-rails"
 
 gem "administrate", github: "goosys/administrate", branch: "feature/contextualize"
+gem "administrate_ransack", github: "goosys/administrate_ransack", branch: "feature/predicates-select-selectize-administrate1-invalid_term"
 gem "administrate-field-nested_has_many"
 gem "administrate-mistybird", github: "goosys/misty-bird-7370"

@@ -10,12 +10,22 @@ GIT
       kaminari (~> 1.2.2)
 
 GIT
+  remote: https://github.com/goosys/administrate_ransack.git
+  revision: 157cf9dc38505c90ff24b97f7b9f4efc761b69d7
+  branch: feature/predicates-select-selectize-administrate1-invalid_term
+  specs:
+    administrate_ransack (0.6.0)
+      administrate (>= 0.18)
+      ransack (>= 2.3, < 5)
+
+GIT
   remote: https://github.com/goosys/misty-bird-7370.git
-  revision: f2007ba422d158921f0124a78fc41773c36c2010
+  revision: 86dd7b7a72af847a266ff55061c2c00daa7d4584
   specs:
     administrate-mistybird (0.1.0)
       administrate (>= 0.20.0, < 1.1.0)
       administrate-field-nested_has_many (= 2.1.0)
+      administrate_ransack
       rails (>= 6.0, < 8)
 
 GIT
@@ -247,6 +257,10 @@ GEM
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
     rake (13.2.1)
+    ransack (4.2.0)
+      activerecord (>= 6.1.5)
+      activesupport (>= 6.1.5)
+      i18n
     rdoc (6.7.0)
       psych (>= 4.0.0)
     refile-mini_magick (0.2.0)
@@ -321,6 +335,7 @@ DEPENDENCIES
   administrate!
   administrate-field-nested_has_many
   administrate-mistybird!
+  administrate_ransack!
   bootsnap
   capybara
   debug
@@ -330,6 +345,7 @@ DEPENDENCIES
   puma (>= 5.0)
   rails (~> 7.1.3, >= 7.1.3.4)
   rails-i18n
+  ransack
   refile!
   refile-mini_magick
   sassc-rails

@@ -1,0 +1,32 @@
+
+select {
+  appearance: menulist;
+  background-color: $white;
+  border: $base-border;
+  border-radius: $base-border-radius;
+  padding: 0.3em 0.5em;
+  transition: border-color $base-duration $base-timing;
+  width: 100%;
+
+  &:hover {
+    border-color: mix($black, $base-border-color, 20%);
+  }
+
+  &:focus {
+    border-color: $action-color;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: mix($black, $white, 5%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: $base-border;
+    }
+  }
+
+  &::placeholder {
+    font-style: italic;
+  }
+}

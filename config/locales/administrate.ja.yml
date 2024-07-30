@@ -12,3 +12,9 @@ ja:
         pluralize:
           zero: ""
           other: "%{count}件"
+  administrate_ransack:
+    filters:
+      clear_filters: "クリア"
+      search: "検索"
+    errors:
+      invalid_search_term: "不正な検索条件です： %{search_term}"

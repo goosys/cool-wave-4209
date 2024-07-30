@@ -3,3 +3,7 @@ en:
     overview:
       home:
         title: Administrator Dashboard
+  analyzer:
+    overview:
+      home:
+        title: Analyzer's Dashboard

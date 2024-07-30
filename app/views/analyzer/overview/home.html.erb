@@ -1,0 +1,17 @@
+<% content_for(:title) do %>
+  <%= t('.title') %>
+<% end %>
+
+<% content_for(:main) do %>
+  <section class="main-content__body">
+    <div>You can try out the search functionality of Ransack in this namespace</div>
+    <div>
+      <h3>Examples</h3>
+      <ul>
+        <li><%= link_to "Search for books with invalid search term", analyzer_books_path({q: {title_cont: "invalid"}}) %></li>
+      </ul>
+    </div>
+  </section>
+<% end %>
+
+<%= render template: 'administrate/application/home', locals: local_assigns %>
