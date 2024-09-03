@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/goosys/misty-bird-7370.git
-  revision: 8a081eeb2a4c27af2741b56c139157668941ef84
+  revision: f5820d35aa82098851e049ba3f436d3396d0f3d2
   specs:
     administrate-mistybird (0.1.0)
       administrate (>= 0.20.0, < 1.1.0)

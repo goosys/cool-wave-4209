@@ -1,4 +1,11 @@
 en:
+  administrate:
+    fields:
+      has_many:
+        pluralize:
+          zero: ""
+          one: "%{pluralize}"
+          other: "%{pluralize}"
   admin:
     overview:
       home:
