@@ -7,6 +7,12 @@ ja:
       new_button: "新規作成する"
       show_button: "詳細に戻る"
       edit_button: "編集する"
+      import_resource: "一括登録"
+      import_for_delete: "一括削除"
+      download_csv_format: "フォーマットダウンロード"
+      download_invalid_resource: "不正データダウンロード"
+      import_button: "一括登録する"
+      import_for_delete_button: "一括削除する"
     fields:
       has_many:
         pluralize:
@@ -16,5 +22,6 @@ ja:
     filters:
       clear_filters: "クリア"
       search: "検索"
+      csv_export: "CSVエクスポート"
     errors:
       invalid_search_term: "不正な検索条件です： %{search_term}"

@@ -27,10 +27,10 @@ form[class$=_search] {
 .filters-buttons {
   text-align: right;
 
-  input[type=submit] {
+  .button {
     font-size: 0.8rem;
   }
-  .button.btn-clear-filters {
+  .button.button--clear-filters {
     background-color: $white;
     color: $black;
     font-size: 0.7rem;

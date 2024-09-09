@@ -1,4 +1,22 @@
 
+button {
+  .show-when-disabled {
+    display: none;
+  }
+
+  .show-when-enabled {
+    display: initial;
+  }
+
+  &:disabled .show-when-disabled {
+    display: initial;
+  }
+
+  &:disabled .show-when-enabled {
+    display: none;
+  }
+}
+
 .button {
   background-color: $skyblue;
 

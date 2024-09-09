@@ -16,5 +16,13 @@ module Analyzer
         Administrate::RoleAwareResourceResolver.new(controller_path)
     end
 
+    helper_method :show_export_button?
+    def show_export_button?
+      is_exportable?
+    end
+
+    def is_exportable?
+      @dashboard.collection_export_types.present?
+    end
   end
 end

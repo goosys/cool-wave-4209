@@ -67,6 +67,7 @@ group :test do
   gem "selenium-webdriver"
 end
 
+gem "csb"
 gem "enumerize"
 gem "rails-i18n"
 gem "ransack"

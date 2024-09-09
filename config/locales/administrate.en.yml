@@ -1,11 +1,21 @@
 en:
   administrate:
+    actions:
+      import_resource: "Import"
+      import_for_delete: "Batch delete"
+      download_csv_format: "Download CSV format"
+      download_invalid_resource: "Download invalid data"
+      import_button: "Import"
+      import_for_delete_button: "Batch delete"
     fields:
       has_many:
         pluralize:
           zero: ""
           one: "%{pluralize}"
           other: "%{pluralize}"
+  administrate_ransack:
+    filters:
+      csv_export: CSV Export
   admin:
     overview:
       home:

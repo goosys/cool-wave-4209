@@ -1,0 +1,91 @@
+
+// Modal
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: auto;
+  transition: all 0.4s;
+  z-index: 9999;
+  .modal-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100%;
+      padding: 50px 0;
+  }
+  .modal-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      cursor: pointer;
+  }
+  .modal-contents {
+      position:relative;
+      width: 560px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+  }
+  .modal-text {
+      color: #000;
+      text-align: center;
+  }
+  &.is-show {
+      opacity: 1;
+      visibility: visible;
+  }
+}
+
+// Modal content
+.modal {
+  .modal-contents {
+    h1:first-child {
+      padding: 0 0.5em 1em;
+      margin-bottom: 1.5em;
+      border-bottom: 1px solid $grey-1;
+      font-weight: bold;
+      text-align: center;
+    }
+    form {
+      section:nth-child(n+2) {
+        margin-top: 1em;
+      }
+    }
+    .modal-form__fields-section {
+      p:nth-child(n+2) {
+        margin-top: 1em;
+      }
+    }
+    .modal-form__notice-section {
+      background-color: $light-yellow;
+      font-size: 0.9em;
+      padding: 1em;
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Import modal
+.import-link-button {
+  margin-left: 3px;
+}
+
+.import-form-buttons {
+  text-align: center;
+  .button {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}

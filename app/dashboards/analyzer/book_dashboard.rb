@@ -54,6 +54,24 @@ class Analyzer::BookDashboard < Administrate::BaseDashboard
     updated_at: Field::DateTime,
   }.freeze
 
+  # 
+  COLLECTION_EXPORT_TYPES = {
+    id: Field::Number,
+    author: Field::String,
+    available: Field::Boolean,
+    description: Field::Text,
+    front_image: Field::Refile,
+    genre: Field::Enumerize,
+    language: Field::Number,
+    pages: Field::Number,
+    price: Field::String,
+    published_at: Field::DateTime,
+    rating: Field::Number,
+    title: Field::String,
+    created_at: Field::DateTime,
+    updated_at: Field::DateTime,
+  }.freeze
+
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = %i[
