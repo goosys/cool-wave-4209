@@ -1,10 +1,38 @@
-@import "administrate/library/variables";
+//
+// https://github.com/thoughtbot/administrate/tree/main/app/assets/stylesheets/administrate
+//
 
-@import "administrate/components/buttons";
-@import "administrate/components/cells";
-@import "administrate/components/filters";
-@import "administrate/components/modal";
-@import "administrate/components/pagination";
-@import "administrate/components/select";
+@charset "utf-8";
 
-@import "administrate/components/fields/enumerize";
+@import "administrate/reset/normalize";
+
+// @import "trix/dist/trix";
+// @import "selectize/dist/css/selectize";
+// @import "selectize/dist/css/selectize.default";
+
+@import "administrate/library/clearfix";
+@import "administrate/library/data-label";
+@import "./library/variables";
+
+@import "administrate/base/forms";
+@import "administrate/base/layout";
+@import "administrate/base/lists";
+@import "administrate/base/tables";
+@import "administrate/base/typography";
+
+@import "administrate/components/app-container";
+@import "administrate/components/attributes";
+@import "./components/buttons";
+@import "./components/cells";
+@import "administrate/components/field-unit";
+@import "./components/filters";
+@import "administrate/components/flashes";
+@import "administrate/components/form-actions";
+@import "administrate/components/main-content";
+@import "./components/modal";
+@import "administrate/components/navigation";
+@import "./components/pagination";
+@import "administrate/components/search";
+@import "./components/select";
+
+@import "./components/fields/enumerize";
