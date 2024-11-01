@@ -7,6 +7,8 @@ class Book < ApplicationRecord
 
   attachment :front_image
 
+  has_rich_text :description_content
+
   enumerize :genre, in: { fiction: 0, non_fiction: 1 }, default: :fiction, scope: true
 
   def self.ransackable_scopes(_auth_object = nil)

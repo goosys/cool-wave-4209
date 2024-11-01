@@ -21,6 +21,7 @@ class BookDashboard < Administrate::BaseDashboard
       collection_attributes: %i[printing_number printed_at]
     ),
     description: Field::Text,
+    description_content: Field::RichText,
     front_image: Field::Refile,
     genre: Field::Enumerize,
     language: Field::Number,
@@ -43,7 +44,7 @@ class BookDashboard < Administrate::BaseDashboard
     author
     available
     book_printing_histories
-    description
+    description_content
     front_image
     genre
   ].freeze
@@ -56,7 +57,7 @@ class BookDashboard < Administrate::BaseDashboard
     available
     book_printing_histories
     least_book_printing_histories
-    description
+    description_content
     front_image
     genre
     language
@@ -76,7 +77,7 @@ class BookDashboard < Administrate::BaseDashboard
     author
     available
     book_printing_histories
-    description
+    description_content
     front_image
     genre
     language

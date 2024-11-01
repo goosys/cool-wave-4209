@@ -13,7 +13,7 @@ rvm use 3.2.4
 ruby -v
 
 sudo apt update
-sudo apt install graphicsmagick
+sudo apt install graphicsmagick libvips
 
 bundle install
 rails s
