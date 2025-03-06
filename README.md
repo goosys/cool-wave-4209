@@ -16,5 +16,6 @@ sudo apt update
 sudo apt install graphicsmagick libvips
 
 bundle install
+rails assets:precompile
 rails s
 ```

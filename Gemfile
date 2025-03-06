@@ -74,6 +74,7 @@ gem "ransack"
 gem "refile", require: "refile/rails", github: "vitalinfo/refile", branch: "latest_ruby_rails"
 gem "refile-mini_magick"
 gem "sassc-rails"
+gem "selectize-rails"
 
 gem "administrate", github: "goosys/administrate", branch: "feature/contextualize"
 gem "administrate_ransack", github: "goosys/administrate_ransack", branch: "feature/predicates-select-selectize-administrate1-invalid_term"
