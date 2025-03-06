@@ -24,3 +24,9 @@ en:
     overview:
       home:
         title: Analyzer's Dashboard
+  date:
+    formats:
+      administrate_datetime_default: "%Y-%m-%d"
+  time:
+    formats:
+      administrate_datetime_default: "%a, %d %b %Y %H:%M:%S %z"

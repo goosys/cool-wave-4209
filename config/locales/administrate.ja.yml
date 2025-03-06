@@ -25,3 +25,9 @@ ja:
       csv_export: "CSVエクスポート"
     errors:
       invalid_search_term: "不正な検索条件です： %{search_term}"
+  date:
+    formats:
+      administrate_datetime_default: "%Y/%m/%d"
+  time:
+    formats:
+      administrate_datetime_default: "%Y/%m/%d %H:%M:%S"
