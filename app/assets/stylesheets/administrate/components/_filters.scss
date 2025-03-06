@@ -25,12 +25,23 @@ form[class$=_search] {
 }
 
 .filters-buttons {
-  text-align: right;
+  display: flex;
+  gap: 8px;
 
   .button {
     font-size: 0.8rem;
   }
+  .button.button--search {
+    order: 2;
+    margin-left: auto;
+    min-width: 10em;
+  }
+  .button.button--export {
+    order: 1;
+    margin-right: auto;
+  }
   .button.button--clear-filters {
+    order: 3;
     background-color: $white;
     color: $black;
     font-size: 0.7rem;

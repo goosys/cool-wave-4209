@@ -1,0 +1,22 @@
+// main-content
+.main-content[role=main] {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  > * {
+    width: 100%;
+  }
+  @media (max-width: 575px) {
+    padding-bottom: 1rem;
+  }
+}
+
+.main-content__header {
+  gap: 4px;
+  .search {
+    margin-right: unset;
+  }
+}

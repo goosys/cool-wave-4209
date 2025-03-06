@@ -25,13 +25,3 @@
   @include enumerize-tag;
   @include enumerize-tag-color($grey-5);
 }
-
-// Enumerise *.genre
-.enumerize-tag-genre-fiction {
-  @include enumerize-tag;
-  @include enumerize-tag-color($red);
-}
-.enumerize-tag-genre-non_fiction {
-  @include enumerize-tag;
-  @include enumerize-tag-color($blue);
-}

@@ -20,19 +20,23 @@
 @import "administrate/base/tables";
 @import "administrate/base/typography";
 
-@import "administrate/components/app-container";
-@import "administrate/components/attributes";
+@import "./components/app-container";
+@import "./components/attributes";
 @import "./components/buttons";
 @import "./components/cells";
-@import "administrate/components/field-unit";
+@import "./components/field-unit";
 @import "./components/filters";
 @import "administrate/components/flashes";
+@import "./components/form";
 @import "administrate/components/form-actions";
-@import "administrate/components/main-content";
+@import "./components/main-content";
 @import "./components/modal";
-@import "administrate/components/navigation";
+@import "./components/navigation";
 @import "./components/pagination";
 @import "administrate/components/search";
 @import "./components/select";
 
 @import "./components/fields/enumerize";
+
+// Application Custom
+@import "./components-custom/custom";

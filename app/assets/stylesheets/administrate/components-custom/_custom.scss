@@ -1,0 +1,10 @@
+// administrate/components/fields/_enumerize.scss
+// Enumerise *.genre
+.enumerize-tag-genre-fiction {
+  @include enumerize-tag;
+  @include enumerize-tag-color($red);
+}
+.enumerize-tag-genre-non_fiction {
+  @include enumerize-tag;
+  @include enumerize-tag-color($blue);
+}

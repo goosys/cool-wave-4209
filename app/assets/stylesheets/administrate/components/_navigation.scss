@@ -1,0 +1,46 @@
+.navigation {
+  padding-top: 0;
+  flex: 1 0 12rem;
+}
+.navigation h2 {
+  margin: 1em 0;
+  margin-left: -1.0em;
+  border-left: 8px solid #7b808c;
+  color: #7b808c;
+  padding-left: 0.5em;
+}
+.navigation__link {
+  // padding: 0.2em 0.6em;
+  text-underline-offset: 0.2em;
+  text-decoration: none;
+}
+.navigation__link--active {
+  background-color: $grey-2;
+  border-radius: $base-border-radius;
+}
+.navigation__link--submenu {
+  margin-left: 0.5em;
+}
+.navigation .message-section {
+  position: relative;
+  margin-bottom: 0.75em;
+}
+.navigation .badge {
+  position: absolute;
+  background-color: #EE3E3C;
+  // top: 0;
+  top: 0.05em;
+  right: 0;
+  border-radius: 1em;
+  line-height: inherit;
+  padding: 0.3em 0.5em;
+  margin: 0.3em;
+  min-width: 2.5em;
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  font-family: system-ui, sans-serif, serif;
+  font-weight: bold;
+  pointer-events: none;
+  letter-spacing: 0.6px;
+}

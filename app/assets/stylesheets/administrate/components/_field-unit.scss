@@ -1,0 +1,78 @@
+.field-unit {
+  flex-wrap: nowrap;
+}
+
+.field-unit__field {
+  flex-grow: unset;
+  max-width: 50rem;
+  width: 100%;
+  .field-unit__field {
+    width: 100%;
+    flex-grow: unset;
+  }
+}
+
+.field-unit--nested-has-many .nested-fields {
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  border: $base-border;
+  padding: 1em;
+  border-radius: 4px;
+
+  a.remove_fields{
+    padding: 0.25em 0.5em;
+    border-radius: 2px;
+    border: 1px solid mix($white, $red, 30%);
+    color: mix($white, $red, 30%);
+    text-decoration: none;
+  }
+}
+.field-unit--nested-has-many {
+  .add_fields {
+    margin-right: 1em;
+  }
+}
+.field-unit__field.field-unit__field__number {
+  display: flex;
+  input {
+    flex: 1;
+    max-width: 15em;
+  }
+  .field-unit__field__number__prefix {
+    margin-right: 0.5em;
+    display: flex;
+    align-items: center;
+  }
+  .field-unit__field__number__suffix {
+    margin-left: 0.5em;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.field-unit--enumerize {
+  .field-unit__field {
+    select {
+      max-width: 25rem;
+    }
+  }
+}
+
+.field-unit--text {
+  .field-unit__field {
+    textarea {
+      min-height: 10rem;
+      field-sizing: content;
+    }
+  }
+}
+
+.field-unit--date-time,
+.field-unit--date,
+.field-unit--time {
+  .field-unit__field {
+    input {
+      max-width: 25rem;
+    }
+  }
+}

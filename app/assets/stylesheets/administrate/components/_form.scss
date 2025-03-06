@@ -1,0 +1,10 @@
+#error_explanation h2 {
+  line-height: 1.6em;
+  color: $red;
+  text-align: center;
+}
+
+.trix-content {
+  max-height: 60vh;
+  overflow-y: auto;
+}

@@ -31,7 +31,9 @@ button {
   }
 }
 
-.button.button--info {
+.button.button--info,
+.import-link-button .button.btn-info,
+.button.add_fields {
   color: $skyblue;
   border: 1px solid $skyblue;
   background-color: $white;
@@ -69,6 +71,19 @@ button {
   }
 }
 
+.import-link-button .button.btn-danger {
+  color: $red;
+  border: 1px solid $red;
+  background-color: $white;
+  transition: all $base-duration $base-timing;
+
+  &:hover {
+    color: mix($white, $red, 40%);
+    border-color: mix($white, $red, 40%);
+    background-color: $white;
+  }
+}
+
 .button.button--update {
   background-color: $orange;
 
@@ -79,6 +94,20 @@ button {
   &:disabled {
     &:hover {
       background-color: $orange;
+    }
+  }
+}
+
+.button.button--search {
+  background-color: $skyblue;
+
+  &:hover {
+    background-color: mix($white, $skyblue, 40%);
+  }
+
+  &:disabled {
+    &:hover {
+      background-color: $skyblue;
     }
   }
 }

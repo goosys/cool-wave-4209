@@ -1,0 +1,30 @@
+.attribute-label {
+  background-color: #7b808c;
+  color: #fff;
+  padding: 0.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.attribute-data {
+  padding: 0.5em;
+}
+
+
+dd:not([data-data-size="0"]).attribute-data.attribute-data--has-many,
+dd:not([data-data-size="0"]).attribute-data.attribute-data--nested-has-many {
+  clear: both;
+  width: calc(100% - 0rem - 1em);
+  margin-right: 0;
+  margin-left: 0;
+}
+dd[data-data-size="0"].attribute-data.attribute-data--has-many,
+dd[data-data-size="0"].attribute-data.attribute-data--nested-has-many {
+  color: #aaa;
+  font-size: 0.8em;
+  padding: 0.8em 0.5em;
+}
+.attribute-data.attribute-data--nested-has-many {
+  table[aria-labelledby="inspection_months"] {
+    max-width: 30em;
+  }
+}
