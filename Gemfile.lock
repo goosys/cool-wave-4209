@@ -1,12 +1,12 @@
 GIT
   remote: https://github.com/goosys/administrate.git
-  revision: 781d93648ae1be60b8bdb8a9e2da8434b35102d1
+  revision: a3ecb08089c9ba039d357f2543da1a260717c3ed
   branch: feature/contextualize
   specs:
-    administrate (1.0.0.beta2)
-      actionpack (>= 6.0, < 8.0)
-      actionview (>= 6.0, < 8.0)
-      activerecord (>= 6.0, < 8.0)
+    administrate (1.0.0.beta3)
+      actionpack (>= 6.0, < 9.0)
+      actionview (>= 6.0, < 9.0)
+      activerecord (>= 6.0, < 9.0)
       kaminari (~> 1.2.2)
 
 GIT
@@ -20,10 +20,10 @@ GIT
 
 GIT
   remote: https://github.com/goosys/misty-bird-7370.git
-  revision: f90cd423047cc3d4a34ebddc57e9e3b25edc2993
+  revision: 9f9b239c4ee1f65944a3427ab0ffdf94b4545b8a
   specs:
     administrate-mistybird (0.1.0)
-      administrate (>= 0.20.0, < 1.1.0)
+      administrate (>= 1.0.0.beta3, < 1.1.0)
       administrate-field-nested_has_many (= 2.1.0)
       administrate_ransack
       rails (>= 6.0, < 8)
@@ -291,6 +291,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    selectize-rails (0.12.6)
     selenium-webdriver (4.22.0)
       base64 (~> 0.2)
       logger (~> 1.4)
@@ -361,6 +362,7 @@ DEPENDENCIES
   refile!
   refile-mini_magick
   sassc-rails
+  selectize-rails
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
