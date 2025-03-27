@@ -1,5 +1,6 @@
 module Analyzer
   class ApplicationController < Administrate::ApplicationController
+    include ::Administrate::Mistybird::RansackSearchFieldPermittedDefault
     include ::ApplicationController::AuthorizeSearchable
 
     def ransack_options
